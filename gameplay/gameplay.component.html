@@ -1,0 +1,11 @@
+<h2>High Scores</h2>
+    <ul>
+        <li *ngFor="let highScore of store.highScores()">
+            {{ highScore.name }} - {{ highScore.score }}
+        </li>
+    </ul>
+
+
+<input type="text" [(ngModel)]="newName" placeholder="Enter your name" />
+<input type="number" [(ngModel)]="newScore" placeholder="Enter your score" />
+<button (click)="addHighScore(newName, newScore)">Add High Score</button>
