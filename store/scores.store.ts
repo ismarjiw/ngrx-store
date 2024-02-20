@@ -1,10 +1,8 @@
 import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
 
-
 export interface GameState {
     highScores: HighScore[];
 }
-
 
 interface HighScore {
     name: string;
